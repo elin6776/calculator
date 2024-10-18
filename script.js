@@ -1,11 +1,10 @@
-cfunction addCourse() {
+function addCourse() {
     const courseDiv = document.createElement('div');
     courseDiv.className = 'course';
     courseDiv.innerHTML = `
         <input type="checkbox" class="select-row">
-        <label>Course Name:</label>
         <input type="text" class="course-name" placeholder="e.g., Science">
-        <label>Grade:</label>
+        
         <select class="grade">
             <option value="">Select Grade</option>
             <option value="A+">A+</option>
@@ -21,7 +20,7 @@ cfunction addCourse() {
             <option value="D-">D-</option>
             <option value="F">F</option>
         </select>
-        <label>Credits:</label>
+
         <input type="number" class="credits" placeholder="e.g., 3">
         <button class="remove-row" onclick="removeCourse(this)">X</button>
     `;

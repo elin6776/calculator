@@ -25,18 +25,30 @@ h1 {
     justify-content: space-between;
 }
 
-label, select, input {
+label {
+    display: inline-block;
+    padding: 10px 35px;
+}
+
+input, select {
     margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+
+#result {
+    text-align: center;
+    font-size: 1.5em;
 }
 
 button {
-    display: block;
-    margin: 10px 0;
+    margin: 10px 0px;
     padding: 10px;
     background-color: #007BFF;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -47,9 +59,21 @@ button:hover {
 .remove-row {
     background-color: red;
     cursor: pointer;
+    padding: 3px 10px;
 }
 
-#result {
-    text-align: center;
-    font-size: 1.5em;
+#add {
+    background-color: #0e8941;
+    display: block;
+    width: 88%;
+    text-align: center; 
+    box-sizing: border-box;
+    margin-left: 25px;
+}
+
+.row{
+    gap:20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
 }
