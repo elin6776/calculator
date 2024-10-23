@@ -2,7 +2,7 @@ function addCourse() {
     const courseDiv = document.createElement('div');
     courseDiv.className = 'course';
     courseDiv.innerHTML = `
-        <input type="checkbox" class="select-row">
+        <input type="checkbox" class="select-row" checked>
         <input type="text" class="course-name" placeholder="e.g., Science">
         
         <select class="grade">
@@ -34,11 +34,9 @@ function removeCourse(button) {
 function resetFields() {
     const rows = document.querySelectorAll('.course');
     rows.forEach(row => {
-        if (row.querySelector('.select-row').checked) {
-            row.querySelector('.course-name').value = '';
-            row.querySelector('.grade').value = '';
-            row.querySelector('.credits').value = '';
-        }
+        row.querySelector('.course-name').value = '';
+        row.querySelector('.grade').value = '';
+        row.querySelector('.credits').value = '';
     });
 }
 
@@ -67,7 +65,7 @@ function calculateGPA() {
 
 function getGradePoints(grade) {
     const gradeScale = {
-        'A+': 4.3,
+        'A+': 4.0,
         'A': 4.0,
         'A-': 3.7,
         'B+': 3.3,

@@ -52,10 +52,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
 .remove-row {
     background-color: red;
     cursor: pointer;
@@ -72,8 +68,20 @@ button:hover {
 }
 
 .row{
-    gap:20px;
+    gap:15px;
     display: flex;
     flex-direction: row;
     margin-left: 25px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.remove-row:hover {
+    background-color: rgb(135, 0, 0);
+}
+
+#add:hover {
+    background-color: rgb(11, 90, 11);
 }
