@@ -65,7 +65,7 @@ function calculateGPA() {
 
 function getGradePoints(grade) {
     const gradeScale = {
-        'A+': 4.0,
+        'A+': 4.3,
         'A': 4.0,
         'A-': 3.7,
         'B+': 3.3,
